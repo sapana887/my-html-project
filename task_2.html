@@ -4,13 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sapana Subba</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 5px;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 15px;
+        }
+
+        .myDiv {
+            background-color: #e7f3fe;
+            border-left: 5px solid #2196F3;
+            padding: 10px;
+            margin: 15px 0;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        aside {
+            background-color: #ffeb3b;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        progress {
+            width: 100%;
+            max-width: 300px;
+            height: 20px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        details {
+            margin: 20px 0;
+        }
+
+        figure {
+            margin: 20px;
+            text-align: center;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        canvas {
+            display: block;
+            margin: 20px auto;
+        }
+
+        .Languages {
+            font-weight: bold;
+        }
+
+    </style>
 </head>
 <body>
    <article>
     <header>
+
         <h1>Intern</h1>
+        
         <label for="intern-choice">Choose a scope:</label>
-        <input list="Scope" id="scope-choice" name="scope-choice" />
+        <input list="Scope"id="scope-choice" name="scope-choice" />
         <datalist id="Scope">
             <option value="Front-end"></option>
             <option value="Backend"></option>
@@ -18,68 +128,76 @@
             <option value="FullStack"></option>
             <option value="Mobile Programming"></option>
         </datalist>
+        
 
-        <section>
-            <h1>Introduction</h1>
-            <img src="download.jpg" alt="Coding">
-            
-            <div class="myDiv">
-            <p>Today I have started my intern  in <span style="color:blue;font-weight:bold">Treeleaf Company</span> on 24th December, 2024. I am doing an internship in React.</p>
-        </section>
-        <section>
-            <aside>
-                <p>We will learn about HTML tags,CSS and Javascript with many tasks and upcoming projects.</p>
-            </aside>
-        </section>
-        <section>
-            <h4>Skills to Learn</h4>
-            <ul>
-                <li>React</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Version Control (Git)</li>
-            </ul>
-        </section>
-        <label for="file">How much i learned till now</label>
-        <nav class="Languages that need to learn">
-            <ol>
-              <li class="Languages">HTML</li>
-              <!-- <label for="file">How much i learned till now</label> -->
-              <progress id="file" max="100" value="70">70%</progress>
-              <li class="Languages">CSS</li>
-              <!-- <label for="file">How much i learned till now</label> -->
-              <progress id="file" max="100" value="50">50%</progress>
-              <li class="Languages">Javascript</li>
-              <!-- <label for="file">How much i learned till now</label> -->
-              <progress id="file" max="100" value="30">30%</progress>
-            </ol>
-          </nav>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+        <img src="download.jpg" alt="Coding" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <div class="myDiv">
+            <p>Today I have started my intern in <span style="color:blue;font-weight:bold">Treeleaf Company</span> on 24th December, 2024. I am doing an internship in React.</p>
+        </div>
+    </section>
+
+    <section>
+        <aside>
+            <p>We will learn about HTML tags, CSS, and JavaScript with many tasks and upcoming projects.</p>
+        </aside>
+    </section>
+
+    <section>
+        <h2>Skills to Learn</h2>
+        <ul>
+            <li>React</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Version Control (Git)</li>
+        </ul>
+    </section>
+
+    <label for="file">How much I learned till now:</label>
+    <nav>
+        <ol>
+            <li class="Languages">HTML</li>
+            <progress id="file" max="100" value="70">70%</progress>
+            <li class="Languages">CSS</li>
+            <progress id="file" max="100" value="50">50%</progress>
+            <li class="Languages">JavaScript</li>
+            <progress id="file" max="100" value="30">30%</progress>
+        </ol>
+    </nav>
+
     <footer>
-        <h1>Treeleaf Company</h1>
+        <h3>Treeleaf Company</h3>
     </footer>
+
     <details>
-        <summary>Details abouts the company</summary>
+        <summary>Details about the company</summary>
         Treeleaf is an innovative technology company that creates and re-imagines what is possible. The company embraces problems and creative challenges to provide driven results. The main aim is to deliver AI and IoT solutions to various problem domains.
     </details>
+
     <figure>
-        <figcaption>Listen to the audio:i used audio tag </figcaption>
+        <figcaption>Listen to the audio: </figcaption>
         <audio controls src="t-rex-roar.mp3"></audio>
-      </figure>
-      <figcaption>Watch the video: i used embed tag</figcaption> 
-      <embed type="video/mp4" src="flower.mp4" width="250" height="200" />
-</div>
-</header>
-<section>
-    <h4>i used canvas tag</h4>
-    <canvas id="myCanvas" width="400" height="200" style="border:1px solid #000000;"></canvas>
-    <script>
-        const canvas = document.getElementById('myCanvas');
-        const ctx = canvas.getContext('2d');
-        ctx.fillStyle = 'blue';
-        ctx.fillRect(50, 50, 150, 100); 
-    </script>
-</section>
+    </figure>
+
+    <figure>
+        <figcaption>Watch the video:</figcaption>
+        <embed type="video/mp4" src="flower.mp4" width="250" height="200" />
+    </figure>
+
+    <section>
+        <h2>Canvas Demo</h2>
+        <canvas id="myCanvas" width="400" height="200" style="border:1px solid #000000;"></canvas>
+        <script>
+            const canvas = document.getElementById('myCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = 'blue';
+            ctx.fillRect(50, 50, 150, 100); 
+        </script>
+    </section>
    </article> 
 </body>
 </html>
